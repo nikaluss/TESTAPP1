@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="greeting">Welcome!</h1>
+
+    <script>
+        // Set a sample item in localStorage (for demonstration)
+       // localStorage.setItem("username", "Sarah");
+
+        // 2. Fetch the item from localStorage
+        const storedName = localStorage.getItem("username");
+
+        // 3. Get the <h1> element by its ID
+        const titleElement = document.getElementById("greeting");
+
+        // 4. Update the text of the <h1> tag if the item exists
+        if (storedName) {
+            titleElement.textContent = `Welcome back, ${storedName}!`;
+        } else {
+            titleElement.textContent = "Welcome, Guest!";
+        }
+    </script>
+<h1>MY DASHBOARD</h1>
+<p>My dashboard.</p>
+
+</body>
+</html>
